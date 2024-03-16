@@ -125,7 +125,6 @@ export function ContentContainer({ data }: IProps) {
                             onClick={() => {
                               setSelectedDigimon(digimon);
                               openModal();
-                              console.log(digimon);
                             }}
                           />
                         );
