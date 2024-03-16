@@ -3,11 +3,12 @@ interface IProps {
   name: string;
   imgUrl: string;
   level: string;
+  onClick?: () => void;
 }
 
-function DigimonCard({ name, imgUrl, level }: IProps) {
+function DigimonCard({ name, imgUrl, level, onClick }: IProps) {
   return (
-    <div className="p-3 bg-slate-700 rounded-3xl mx-auto">
+    <div className="p-3 bg-slate-700 rounded-3xl mx-auto" onClick={onClick}>
       <div className="flex flex-col gap-2 border-2 bg-white border-blue-500 text-center rounded-3xl overflow-hidden mx-auto w-fit  cursor-pointer py-4 group px-4 ">
         <picture>
           <Image
