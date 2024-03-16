@@ -13,6 +13,7 @@ export function ContentContainer({ data }: IProps) {
   const [level, setLevel] = useState<string>("Todos");
   const [digimons, setDigimons] = useState<DigimonData[]>([]);
   const [filteredDigimons, setFilteredDigimons] = useState<DigimonData[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     setDigimons(data);
@@ -41,10 +42,12 @@ export function ContentContainer({ data }: IProps) {
   }, [level, name, digimons]);
 
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-24 bg-orange-400 ">
+    <div className="w-full flex flex-col items-center justify-center gap-24">
       <SearchBar setName={setName} setLevel={setLevel} />
 
       <ul className="flex flex-wrap lg:grid lg:grid-cols-3 gap-5 mx-auto ">
+        {}
+
         {filteredDigimons.map((digimon) => {
           if (level === "Todos") {
             return (
