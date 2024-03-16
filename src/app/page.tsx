@@ -18,6 +18,7 @@ export default async function Home() {
               width={200}
               height={200}
               className="w-auto h-auto"
+              priority
             />
             <h1 className="hidden md:flex animate-typing overflow-hidden font-digimon md:whitespace-nowrap border-r-4 border-r-white pr-5 text-xl text-white font-bold  ">
               Seja bem-vindo ao mundo dos Digimons

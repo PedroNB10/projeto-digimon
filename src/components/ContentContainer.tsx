@@ -87,6 +87,7 @@ export function ContentContainer({ data }: IProps) {
                   height={300}
                   width={300}
                   className="w-auto h-auto"
+                  unoptimized
                 />
               </div>
             </>

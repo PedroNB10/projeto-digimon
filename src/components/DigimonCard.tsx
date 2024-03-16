@@ -16,6 +16,7 @@ function DigimonCard({ name, imgUrl, level }: IProps) {
             height={300}
             width={300}
             alt={name}
+            priority
           />
         </picture>
         <h2 className="font-semibold text-blue-700">Nome: {name}</h2>
