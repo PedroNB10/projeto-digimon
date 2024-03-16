@@ -1,6 +1,6 @@
 import { getDigimons } from "./actions";
 import { DigimonData } from "@/types/interfaces";
-import { SearchBar } from "@/components/SearchBar";
+import { ContentContainer } from "@/components/ContentContainer";
 
 export default async function Home() {
   const data: DigimonData[] = await getDigimons();
@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
     <main className="flex flex-col items-center justify-between p-24">
-      <SearchBar data={data} />
+      <ContentContainer data={data} />
     </main>
   );
 }
