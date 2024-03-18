@@ -4,7 +4,7 @@ Esse é um projeto desenvolvido com [Next.js](https://nextjs.org/) com intuito d
 
 | **Link do Deploy do Projeto:** [https://projeto-digimon-five.vercel.app/](https://projeto-digimon-five.vercel.app/)
 
-**Obs**: É preciso ter o node instalado para executar os comandos abaixo:
+**Obs**: É preciso ter o **node** instalado para executar os comandos abaixo:
 
 Para rodar o projeto, instale as dependências utilizando npm:
 
